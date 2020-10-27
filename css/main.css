@@ -15,7 +15,6 @@ main {
   background: #004643;
   width: 100%;
   height: 100vh;
-  margin-bottom: 4rem;
 }
 
 main .navbar {
@@ -136,6 +135,7 @@ main section.banner-principal .card-background div a, main section.banner-princi
 
 section.modelos {
   height: 300vh;
+  background-color: #abd1c6;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -151,19 +151,53 @@ section.modelos .descripcion-de-modelos {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 0 5rem;
+  position: relative;
+}
+
+section.modelos .descripcion-de-modelos::before {
+  position: absolute;
+  content: '';
+  width: 5px;
+  height: 40%;
+  background-color: #004643;
+  top: 50%;
+  opacity: 0.5;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 50px;
+  border-radius: 20px;
+}
+
+section.modelos .descripcion-de-modelos h2 {
+  color: #001e1d;
+  margin: 1rem 0;
+}
+
+section.modelos .descripcion-de-modelos p {
+  margin: 0.5rem 0;
+  color: #0f3433;
+}
+
+section.modelos .descripcion-de-modelos a {
+  display: inline-block;
+  width: 25.75%;
+  margin: 1rem 0;
+  background-color: #f9bc60;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 3px;
 }
 
 section.modelos .nuestros-modelos {
   width: 50%;
 }
 
-section.modelos .nuestros-modelos div {
+section.modelos .nuestros-modelos div.contenedores-cards {
   height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -177,6 +211,56 @@ section.modelos .nuestros-modelos div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 2rem 4.75rem;
+}
+
+section.modelos .nuestros-modelos div.contenedores-cards div.card {
+  padding: 4rem 2rem;
+  background-color: #004643;
+  position: relative;
+}
+
+section.modelos .nuestros-modelos div.contenedores-cards div.card h2 {
+  color: #fffffe;
+  font-weight: 700;
+  font-size: 1.75rem;
+  margin: 2rem 0 1rem;
+}
+
+section.modelos .nuestros-modelos div.contenedores-cards div.card p {
+  color: #abd1c6;
+  margin: 1rem 0 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+section.modelos .nuestros-modelos div.contenedores-cards div.card svg {
+  position: absolute;
+  right: -10%;
+  -webkit-transform: translateX(-50%) scale(0.8);
+          transform: translateX(-50%) scale(0.8);
+  top: -320px;
+}
+
+section.modelos .nuestros-modelos div.contenedores-cards div.card img {
+  width: 150px;
+  vertical-align: top;
+  position: absolute;
+  right: -18%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+section.modelos .nuestros-modelos div.contenedores-cards div.card img.skate {
+  top: -70px;
+}
+
+section.modelos .nuestros-modelos div.contenedores-cards div.card img.plane {
+  top: -30px;
+}
+
+section.modelos .nuestros-modelos div.contenedores-cards div.card img.motor {
+  top: -60px;
 }
 
 footer {

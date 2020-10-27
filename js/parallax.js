@@ -6,7 +6,7 @@ function splitScroll(){
         triggerElement: '.descripcion-de-modelos',
         triggerHook: 0
     })
-    .addIndicators()
+    .setPin('.descripcion-de-modelos')
     .addTo(controller);
 }
 

@@ -5,6 +5,7 @@ $blanco: #fffffe;
 $button: #f9bc60;
 $parrafos: #abd1c6;
 $cardParrafo: #0f3433;
+$fondo-cards: #004643;
 
 *{
     margin: 0;
@@ -19,7 +20,6 @@ main{
     background: #004643;
     width: 100%;
     height: 100vh;
-    margin-bottom: 4rem;
     .navbar{
         width: 100%;
         nav{
@@ -102,23 +102,95 @@ main{
 }
 section.modelos{
     height: 300vh;
+    background-color: #abd1c6;
     display: flex;
     .descripcion-de-modelos{
         width: 50%;
         height: 100vh;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        padding: 0 5rem;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            width: 5px;
+            height: 40%;
+            background-color: $fondo-cards;
+            top: 50%;
+            opacity: 0.5;
+            transform: translateY(-50%);
+            left: 50px;
+            border-radius: 20px;
+        }
+        h2{
+            color: #001e1d;
+            margin: 1rem 0;
+        }
+        p{
+            margin: 0.5rem 0;
+            color: #0f3433;
+        }
+        a{
+            display: inline-block;
+            width: 25.75%;
+            margin: 1rem 0;
+            background-color: $button;
+            color: #fff;
+            text-decoration: none;
+            padding: 10px 15px;
+            border-radius: 3px;
+        }
     }
     .nuestros-modelos{
         width: 50%;
-        div{
+        div.contenedores-cards{
             height: 100vh;
             display: flex;
             justify-content: space-around;
             flex-direction: column;
             align-items: center;
+            padding: 2rem 4.75rem;
+            div.card{
+                padding: 4rem 2rem;
+                background-color: $fondo-cards;
+                position: relative;
+                h2{
+                    color: $blanco;
+                    font-weight: 700;
+                    font-size: 1.75rem;
+                    margin: 2rem 0 1rem;
+                }
+                p{
+                    color: $parrafos;
+                    margin: 1rem 0 2rem;
+                    font-size: 1rem;
+                    font-weight: 500;
+                }
+                svg{
+                    position: absolute;
+                    right: -10%;                    
+                    transform: translateX(-50%) scale(0.8);
+                    top: -320px;
+                }
+                img{
+                    width: 150px;
+                    vertical-align: top;
+                    position: absolute;
+                    right: -18%;
+                    transform: translateX(-50%);
+                    &.skate{
+                        top: -70px;
+                    }
+                    &.plane{
+                        top: -30px;
+                    }
+                    &.motor{
+                        top: -60px;
+                    }
+                }
+            }
         }
     }
 }
