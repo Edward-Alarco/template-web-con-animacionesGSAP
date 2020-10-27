@@ -104,7 +104,7 @@ main section.banner-principal .card-background div, main section.banner-principa
 }
 
 main section.banner-principal .card-background div h2, main section.banner-principal .card-background img h2 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   color: #001e1d;
   margin: 1rem 0;
 }
@@ -280,6 +280,11 @@ section.modelos .nuestros-modelos div.contenedores-cards div.card img.motor {
   margin-top: 2rem;
 }
 
+.contacto .container p {
+  margin: 1rem 0;
+  color: #0f3433;
+}
+
 .contacto .container form {
   display: -ms-grid;
   display: grid;
@@ -297,6 +302,10 @@ section.modelos .nuestros-modelos div.contenedores-cards div.card img.motor {
   position: relative;
 }
 
+.contacto .container form .primero p.error {
+  font-size: 0.85rem;
+}
+
 .contacto .container form .primero input {
   height: 100%;
   display: block;
@@ -306,15 +315,29 @@ section.modelos .nuestros-modelos div.contenedores-cards div.card img.motor {
   color: #fffffe;
   background-color: #004643;
   width: 100%;
+  border-radius: 3px;
+  padding-top: 0.5rem;
+  padding-right: 1rem;
+  padding-bottom: 0.5rem;
 }
 
 .contacto .container form .primero label {
   position: absolute;
   padding-left: 1rem;
+  font-size: 1rem;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: rgba(255, 255, 254, 0.6);
+}
+
+.contacto .container form .primero label.active {
+  top: -15px;
+  padding-left: 0.25rem;
+  opacity: 0.9;
+  font-size: 0.9rem;
 }
 
 .contacto .container form .segundo {
@@ -326,11 +349,19 @@ section.modelos .nuestros-modelos div.contenedores-cards div.card img.motor {
   position: relative;
 }
 
+.contacto .container form .segundo p.error {
+  font-size: 0.85rem;
+}
+
 .contacto .container form .segundo input {
   height: 100%;
+  border-radius: 3px;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   display: block;
   outline: none;
   padding-left: 1rem;
+  padding-right: 1rem;
   color: #fffffe;
   border: none;
   background-color: #004643;
@@ -340,31 +371,34 @@ section.modelos .nuestros-modelos div.contenedores-cards div.card img.motor {
 .contacto .container form .segundo label {
   position: absolute;
   padding-left: 1rem;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   color: rgba(255, 255, 254, 0.6);
 }
 
-.contacto .container form .tercero {
-  height: 2.75rem;
-  padding: 0 1rem;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
+.contacto .container form .segundo label.active {
+  top: -15px;
+  padding-left: 0.25rem;
+  opacity: 0.9;
+  font-size: 0.9rem;
 }
 
-.contacto .container form .tercero button {
+.contacto .container form button {
   background-color: #f9bc60;
   border: none;
   outline: none !important;
   color: #001e1d;
   display: inline-block;
-  width: 100%;
+  width: 80%;
+  margin: 0 auto;
   height: 100%;
   padding-left: 2rem;
   padding-right: 2rem;
   font-weight: 600;
+  border-radius: 3px;
   cursor: pointer;
 }
 

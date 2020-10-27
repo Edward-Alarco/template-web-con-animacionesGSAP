@@ -30,8 +30,8 @@
         <section class="banner-principal">
             <div class="card-background">
                 <div>
-                    <h2>Scooters Electricos</h2>
-                    <p>Transportes modernos a la vuelta de tu casa! Contacta con nosotros y ver&aacute;s los resultados.
+                    <h2>Transportes Electricos</h2>
+                    <p>Transportes modernos a la vuelta de tu casa! Contacta con nosotros y ver&aacute;s lo que tenemos <br> para ti.
                     </p>
                     <a href="#">Contactar</a>
                 </div>
@@ -83,24 +83,25 @@
     <section class="contacto">
         <div class="container">
             <h2>¿Deseas suscribirte a nuestro bolet&iacute;n?</h2>
-            <form action="#">
+            <p>Recibiras cada una de las novedades de nuestros <br> trasportes electricos. Ademas de descuentos, avisos previos <br> a distintas actividades y más!</p>
+            <form action="#" name="formulario_contacto">
                 <div class="primero">
-                    <input type="text" id="nombre">
-                    <label for="nombre">Tu nombre</label>
+                    <input type="text" id="nombre" name="nombre">
+                    <label for="nombre" class="label">Tu nombre</label>
                 </div>
                 <div class="segundo">
-                    <input type="email" id="email">
-                    <label for="email">tu@ejemplo.com</label>
+                    <input type="email" id="email" name="correo">
+                    <label for="email" class="label">tu@ejemplo.com</label>
                 </div>
-                <div class="tercero">
-                    <button>Suscribirse</button>
-                </div>
+                
+                <button type="submit">Suscribirse</button>
+                
             </form>
         </div>
     </section>
 
     <footer>
-        
+
     </footer>
 
 
@@ -115,6 +116,7 @@
         crossorigin="anonymous"></script>
     <script src="js/parallax.js"></script>
     <script src="js/animation.js"></script>
+    <script src="js/eventoFocusForm.js"></script>
 </body>
 
 </html>
