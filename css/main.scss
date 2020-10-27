@@ -1,0 +1,132 @@
+// Google Fonts
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap');
+
+$blanco: #fffffe;
+$button: #f9bc60;
+$parrafos: #abd1c6;
+$cardParrafo: #0f3433;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    font-size: 16px;
+}
+main{
+    background: #004643;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 4rem;
+    .navbar{
+        width: 100%;
+        nav{
+            min-height: 5rem;
+            display: grid;
+            grid-template-columns: 9% 1fr 1fr 9%;
+            align-items: center;
+            a.icon-button{
+                text-decoration: none;
+                grid-column: 2/3;  
+                color: $blanco;
+                font-size: 2rem;
+            }
+            ul{
+                display: flex;
+                list-style: none;
+                animation-duration: .3s;
+                transition: all .3s ease-in-out;
+                grid-column: 3/4;
+                justify-content: flex-end;
+                li{
+                    margin: 0 1.25rem;
+                    a{
+                        text-decoration: none;
+                        color: $blanco;
+                        &.button{
+                            padding: 10px 12px;
+                            border-radius: 3px;
+                            background-color: $button;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.banner-principal{
+        margin: 3rem auto;
+        .card-background{
+            position: absolute;
+            background-color: #e8e4e6;
+            margin: auto;
+            width: 75%; //to 75%
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            div,img{
+                width: 50%;
+                padding: 2.75rem;
+                h2{
+                    font-size: 2.5rem;
+                    color: #001e1d;
+                    margin: 1rem 0;
+                }
+                p{
+                    font-size: 1rem;
+                    margin: 0.25rem 0 0.9rem 0;
+                    color: $cardParrafo;
+                }
+                a{
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: $button;
+                    padding: 10px 15px;
+                    margin: 1rem auto;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}
+.slider{
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+}
+section.modelos{
+    height: 300vh;
+    display: flex;
+    .descripcion-de-modelos{
+        width: 50%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .nuestros-modelos{
+        width: 50%;
+        div{
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+footer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rebeccapurple;
+}

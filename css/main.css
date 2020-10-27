@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;1,200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  font-size: 16px;
+}
+
+main {
+  background: #004643;
+  width: 100%;
+  height: 100vh;
+  margin-bottom: 4rem;
+}
+
+main .navbar {
+  width: 100%;
+}
+
+main .navbar nav {
+  min-height: 5rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 9% 1fr 1fr 9%;
+      grid-template-columns: 9% 1fr 1fr 9%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .navbar nav a.icon-button {
+  text-decoration: none;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  color: #fffffe;
+  font-size: 2rem;
+}
+
+main .navbar nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+main .navbar nav ul li {
+  margin: 0 1.25rem;
+}
+
+main .navbar nav ul li a {
+  text-decoration: none;
+  color: #fffffe;
+}
+
+main .navbar nav ul li a.button {
+  padding: 10px 12px;
+  border-radius: 3px;
+  background-color: #f9bc60;
+}
+
+main section.banner-principal {
+  margin: 3rem auto;
+}
+
+main section.banner-principal .card-background {
+  position: absolute;
+  background-color: #e8e4e6;
+  margin: auto;
+  width: 75%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main section.banner-principal .card-background div, main section.banner-principal .card-background img {
+  width: 50%;
+  padding: 2.75rem;
+}
+
+main section.banner-principal .card-background div h2, main section.banner-principal .card-background img h2 {
+  font-size: 2.5rem;
+  color: #001e1d;
+  margin: 1rem 0;
+}
+
+main section.banner-principal .card-background div p, main section.banner-principal .card-background img p {
+  font-size: 1rem;
+  margin: 0.25rem 0 0.9rem 0;
+  color: #0f3433;
+}
+
+main section.banner-principal .card-background div a, main section.banner-principal .card-background img a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f9bc60;
+  padding: 10px 15px;
+  margin: 1rem auto;
+  display: inline-block;
+}
+
+.slider {
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+section.modelos {
+  height: 300vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.modelos .descripcion-de-modelos {
+  width: 50%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.modelos .nuestros-modelos {
+  width: 50%;
+}
+
+section.modelos .nuestros-modelos div {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer {
+  width: 100%;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: rebeccapurple;
+}
+/*# sourceMappingURL=main.css.map */
