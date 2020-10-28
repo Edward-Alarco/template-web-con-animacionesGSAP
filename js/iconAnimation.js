@@ -1,11 +1,13 @@
 const buttonIcon = document.querySelector('#navOpenInterruptor');
 const navOpen = document.querySelector('.barra-open');
+const contenidoUno = document.querySelector('.buscador');
+const contenidoDos = document.querySelector('.algunos-productos');
 
-const tl2 = new TimelineLite( {paused:true} );
+const tl2 = new TimelineLite( {paused:true, reversed: true} );
 
 tl2.to('.card-background', 1, {
     width: '55%',
-    left: '75%',
+    left: '65%',
     ease: Power2.easeOut
 })
 .to('.titlecard',1, {
@@ -17,15 +19,27 @@ tl2.to('.card-background', 1, {
     ease: Power2.easeOut
 }, '-=2')
 .to(navOpen,1, {
-    top: '0',
+    left: '0',
     pointerEvents: 'auto',
     ease: Power2.easeOut
-}, '-=1.65');
+}, '-=1.65')
+.to(contenidoUno,1, {
+    opacity: '1',
+    ease: Power2.easeOut
+}, '-=2.65')
+.to(contenidoDos,1, {
+    opacity: '1',
+    ease: Power2.easeOut
+}, '-=3.65');
 
 buttonIcon.addEventListener('click', ()=>{
-    tl2.play();
+    toogleTween(tl2);
     tl2.to(buttonIcon,1,{
         transform: 'translateX(300px)',
         ease: Power2.easeOut
-    }, '-=3')
+    }, '-=3');
 });
+
+function toogleTween(tween){
+    tween.reversed() ? tween.play() : tween.reverse();
+}
