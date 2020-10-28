@@ -32,13 +32,130 @@ main .navbar nav {
           align-items: center;
 }
 
-main .navbar nav a.icon-button {
+main .navbar nav .icon-button {
   text-decoration: none;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
+  display: block;
   color: #fffffe;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 45px;
   font-size: 2rem;
+}
+
+main .navbar nav div.barra-open {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+  pointer-events: none;
+  position: absolute;
+  top: -100vh;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30%;
+  height: 100vh;
+  background: rgba(255, 255, 254, 0.9);
+}
+
+main .navbar nav div.barra-open .buscador {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+main .navbar nav div.barra-open .buscador div {
+  position: relative;
+}
+
+main .navbar nav div.barra-open .buscador div input[type="text"] {
+  background: rgba(255, 255, 254, 0.5);
+  outline: none !important;
+  border-radius: 50px;
+  padding: 10px;
+  width: 100%;
+  border: none;
+}
+
+main .navbar nav div.barra-open .buscador div i {
+  position: absolute;
+  right: 0;
+  padding-right: 15px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main .navbar nav div.barra-open .algunos-productos {
+  width: 80%;
+  margin: 1rem auto;
+}
+
+main .navbar nav div.barra-open .algunos-productos h3 {
+  text-align: center;
+  font-size: 1.35rem;
+}
+
+main .navbar nav div.barra-open .algunos-productos div {
+  margin: 1.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 100%;
+  height: 120px;
+}
+
+main .navbar nav div.barra-open .algunos-productos div img {
+  width: 35%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  vertical-align: top;
+  cursor: pointer;
+}
+
+main .navbar nav div.barra-open .algunos-productos div div.texto {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0.75rem;
+}
+
+main .navbar nav div.barra-open .algunos-productos div div.texto h4 {
+  font-size: 0.95rem;
+}
+
+main .navbar nav div.barra-open .algunos-productos div div.texto p {
+  font-size: 0.8rem;
 }
 
 main .navbar nav ul {
@@ -74,14 +191,21 @@ main .navbar nav ul li a.button {
 }
 
 main section.banner-principal {
-  margin: 3rem auto;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 87.25vh;
 }
 
 main section.banner-principal .card-background {
   position: absolute;
   background-color: #e8e4e6;
   margin: auto;
-  width: 75%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,8 +215,9 @@ main section.banner-principal .card-background {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -104,7 +229,7 @@ main section.banner-principal .card-background div, main section.banner-principa
 }
 
 main section.banner-principal .card-background div h2, main section.banner-principal .card-background img h2 {
-  font-size: 2.3rem;
+  font-size: 2rem;
   color: #001e1d;
   margin: 1rem 0;
 }
@@ -261,6 +386,69 @@ section.modelos .nuestros-modelos div.contenedores-cards div.card img.plane {
 
 section.modelos .nuestros-modelos div.contenedores-cards div.card img.motor {
   top: -60px;
+}
+
+.spacer {
+  background: #abd1c6;
+  padding: 3rem 0;
+}
+
+.servicios {
+  background: #004643;
+  padding: 3rem 0;
+}
+
+.servicios h2 {
+  color: #fffffe;
+  text-align: center;
+  margin: 3rem 0;
+  text-transform: uppercase;
+  font-size: 2rem;
+  letter-spacing: 0.15em;
+}
+
+.servicios .contenedor {
+  width: 90%;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  margin-bottom: 3rem;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.servicios .contenedor .card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.servicios .contenedor .card .contenedor-i {
+  background: #f9bc60;
+  padding: 2.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.servicios .contenedor .card .contenedor-i:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.servicios .contenedor .card .contenedor-i i {
+  font-size: 3rem;
+  z-index: 5;
+  color: #fffffe;
 }
 
 .contacto {

@@ -27,11 +27,87 @@ main{
             display: grid;
             grid-template-columns: 9% 1fr 1fr 9%;
             align-items: center;
-            a.icon-button{
+            .icon-button{
                 text-decoration: none;
-                grid-column: 2/3;  
+                transition: all .3s ease-in-out;
+                cursor: pointer;
+                grid-column: 2/3; 
+                display: block; 
                 color: $blanco;
+                justify-content: flex-start;
+                width: 45px;
                 font-size: 2rem;
+            }
+            div.barra-open{
+                transition: all .3s ease-in-out;
+                pointer-events: none;
+                position: absolute;
+                top: -100vh;
+                left: 0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 30%;
+                height: 100vh;
+                background: rgba($color: $blanco, $alpha: 0.9);
+                .buscador{
+                    width: 80%;
+                    margin: 1rem auto;
+                    div{
+                        position: relative;
+                        input[type="text"]{
+                            background: rgba($color: $blanco, $alpha: 0.5);
+                            outline: none !important;
+                            border-radius: 50px;
+                            padding: 10px;
+                            width: 100%;
+                            border: none;                            
+                        }
+                        i{
+                            position: absolute;
+                            right: 0;
+                            padding-right: 15px;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                    }
+                }
+                .algunos-productos{
+                    width: 80%;
+                    margin: 1rem auto;
+                    h3{
+                        text-align: center;
+                        font-size: 1.35rem;
+                    }
+                    div{
+                        margin: 1.5rem 0;
+                        display: flex;
+                        flex-wrap: nowrap;
+                        flex-direction: row;
+                        width: 100%;
+                        height: 120px;
+                        img{
+                            width: 35%;
+                            object-fit: cover;
+                            vertical-align: top;
+                            cursor: pointer;
+                        }
+                        div.texto{
+                            display: flex;
+                            flex-direction: column;
+                            flex-wrap: nowrap;
+                            align-items: center;
+                            padding: 0.75rem;
+                            h4{
+                                font-size: 0.95rem;
+                            }
+                            p{
+                                font-size: 0.8rem;
+                            }
+                        }
+                    }
+                }
             }
             ul{
                 display: flex;
@@ -56,22 +132,25 @@ main{
         }
     }
     section.banner-principal{
-        margin: 3rem auto;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        height: 87.25vh;
         .card-background{
             position: absolute;
             background-color: #e8e4e6;
             margin: auto;
-            width: 75%; //to 75%
+            width: 70%; //to 75%
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: space-around;
+            justify-content: center;
             align-items: center;
             div,img{
                 width: 50%;
                 padding: 2.75rem;
                 h2{
-                    font-size: 2.3rem;
+                    font-size: 2rem;
                     color: #001e1d;
                     margin: 1rem 0;
                 }
@@ -189,6 +268,50 @@ section.modelos{
                     &.motor{
                         top: -60px;
                     }
+                }
+            }
+        }
+    }
+}
+.spacer{
+    background: $parrafos;
+    padding: 3rem 0;
+}
+.servicios{
+    background: $fondo-cards;
+    padding: 3rem 0;
+    h2{
+        color: $blanco;
+        text-align: center; 
+        margin: 3rem 0;
+        text-transform: uppercase;
+        font-size: 2rem;
+        letter-spacing: 0.15em;
+    }
+    .contenedor{
+        width: 90%;
+        margin: 0 auto;
+        display: grid;
+        margin-bottom: 3rem;
+        grid-template-columns: repeat(3, 1fr);
+        .card{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .contenedor-i{
+                background: $button;
+                padding: 2.5rem;
+                border-radius: 50%;
+                cursor: pointer;
+                transform: scale(1);
+                transition: all .3s ease-in-out;
+                &:hover{
+                    transform: scale(1.1);
+                }
+                i{
+                    font-size: 3rem;
+                    z-index: 5;
+                    color: $blanco;
                 }
             }
         }

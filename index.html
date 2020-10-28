@@ -17,9 +17,34 @@
     <main>
         <div class="navbar">
             <nav>
-                <a href="#" class="icon-button">
+                <div class="icon-button" id="navOpenInterruptor">
                     <i class="far fa-hand-point-left"></i>
-                </a>
+                </div>
+                <div class="barra-open">
+                    <div class="buscador">
+                        <div>
+                            <input type="text" placeholder="Buscar">
+                            <i class="fas fa-search"></i>
+                        </div>
+                    </div>
+                    <div class="algunos-productos">
+                        <h3>Algunas novedades</h3>
+                        <div>
+                            <img src="img/scooter-news.jpg" alt="">
+                            <div class="texto" style="margin: 0;">
+                                <h4>Scooter Electronico Xiaomi</h4>
+                                <p>La mejor Scooter Eléctrica de gama media-alta.</p>
+                            </div>
+                        </div>
+                        <div>
+                            <img src="img/motorcycle-news.jpg" alt="">
+                            <div class="texto" style="margin: 0;">
+                                <h4>Motocicleta Negra Paris</h4>
+                                <p>La mejor motocicleta eléctrica economica y pro-ambiente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <ul class="enlaces">
                     <li><a href="#">Blog</a></li>
                     <li><a href="#">Contacto</a></li>
@@ -30,8 +55,8 @@
         <section class="banner-principal">
             <div class="card-background">
                 <div>
-                    <h2>Transportes Electricos</h2>
-                    <p>Transportes modernos a la vuelta de tu casa! Contacta con nosotros y ver&aacute;s lo que tenemos <br> para ti.
+                    <h2 class="titlecard">Transportes Electricos</h2>
+                    <p class="subtitlecard">Transportes modernos a la vuelta de tu casa! Contacta con nosotros y ver&aacute;s lo que tenemos <br> para ti.
                     </p>
                     <a href="#">Contactar</a>
                 </div>
@@ -79,6 +104,27 @@
             </div>
         </div>
     </section>
+    <div class="spacer"></div>
+    <section class="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="contenedor">
+            <div class="card">
+                <div class="contenedor-i">
+                    <i class="fas fa-dolly"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenedor-i">
+                    <i class="fas fa-shield-virus"></i>
+                </div>
+            </div>
+            <div class="card">
+                <div class="contenedor-i">
+                    <i class="fas fa-store-alt"></i>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="contacto">
         <div class="container">
@@ -105,18 +151,24 @@
     </footer>
 
 
-
+    <!-- ScrollMagic Parallax -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js"></script>
+    <!-- GSAP Animation Banner -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
         integrity="sha512-DkPsH9LzNzZaZjCszwKrooKwgjArJDiEjA5tTgr3YX4E6TYv93ICS8T41yFHJnnSmGpnf0Mvb5NhScYbwvhn2w=="
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
         integrity="sha512-0xrMWUXzEAc+VY7k48pWd5YT6ig03p4KARKxs4Bqxb9atrcn2fV41fWs+YXTKb8lD2sbPAmZMjKENiyzM/Gagw=="
         crossorigin="anonymous"></script>
+    <!-- GSAP Animation Button Icon -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>
     <script src="js/parallax.js"></script>
     <script src="js/animation.js"></script>
     <script src="js/eventoFocusForm.js"></script>
+    <script src="js/iconAnimation.js"></script>
 </body>
 
 </html>
