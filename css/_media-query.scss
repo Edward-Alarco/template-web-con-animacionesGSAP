@@ -1,0 +1,355 @@
+@media all and (max-width: 1130px){
+    main section.banner-principal .card-background{
+        width: 62.5%;
+    }
+    main section.banner-principal .card-background div h2, main section.banner-principal .card-background img h2{
+        font-size: 1.75rem;
+        margin: 0.75rem 0;
+    }
+    main section.banner-principal .card-background div p, main section.banner-principal .card-background img p{
+        font-size: 0.85rem;
+        margin: 0.2rem 0 0.8rem 0;
+    }
+    main section.banner-principal .card-background div a, main section.banner-principal .card-background img a{
+        margin: 0rem auto;
+    }
+    section.modelos .descripcion-de-modelos a{
+        width: 32.75%;
+    }
+    section.modelos .descripcion-de-modelos h2{
+        font-size: 1.25rem;
+    }
+    section.modelos .descripcion-de-modelos p{
+        margin: 0;
+        font-size: 0.9rem;
+    }
+    section.modelos .descripcion-de-modelos::before{
+        height: 37.5%;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card h2{
+        font-size: 1.25rem;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card p{
+        font-size: 0.9rem;
+        margin: 0.5rem 0 1.25rem;
+    }
+    .servicios h2{
+        font-size: 1.75rem;
+        margin: 2.5rem 0 0.5rem;
+    }
+    .servicios .contenedor .card .face.face2 .content p{
+        font-size: 0.9rem;
+    }
+    .servicios .contenedor .card .face.face2{
+        padding: 1rem;
+    }
+    .contacto .container h2{
+        margin-top: 1.75rem;
+    }
+    .contacto .container p{
+        margin: 0.75rem 0;
+        font-size: 0.9rem;
+    }
+    .contacto .container form .primero label, .contacto .container form .segundo label{
+        font-size: 0.9rem;
+    }
+    footer .contenedor div ul li a, footer .contenedor div ul li p{
+        font-size: 0.9rem;
+    }
+    footer .contenedor div ul li{
+        margin: 0.7rem 0;
+    }
+    main .navbar nav ul li{
+        margin: 0 0.75rem;
+    }
+    main .navbar nav div.barra-open .algunos-productos div div.texto h4{
+        font-size: 0.8rem;
+    }
+    main .navbar nav div.barra-open .algunos-productos div div.texto p{
+        font-size: 0.7rem;
+    }
+    main .navbar nav div.barra-open .algunos-productos div img{
+        width: 40%;
+    }
+    main .navbar nav div.barra-open .algunos-productos h3{
+        font-size: 1.2rem;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card img{
+        width: 125px;
+    }
+}
+
+@media all and (max-width: 1090px){
+    .servicios .contenedor{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .servicios h2{
+        margin: 2rem 0 3rem;
+    }
+    #ultimacard{
+        grid-column: span 2 ;
+    }
+}
+
+@media all and (max-width: 975px){
+    main section.banner-principal .card-background div, main section.banner-principal .card-background img{
+        padding: 1.5rem;
+    }
+    main section.banner-principal .card-background div, main section.banner-principal .card-background img{
+        padding: 1rem;
+    }
+    main section.banner-principal .card-background{
+        width: 65%;
+    }
+    main section.banner-principal .card-background div h2, main section.banner-principal .card-background img h2{
+        font-size: 1.4rem;
+        margin: 0.5rem 0;
+    }
+    main .navbar nav ul li a{
+        font-size: 0.9rem;
+    }
+    main .navbar nav .icon-button{
+        font-size: 1.5rem;
+    }
+    main section.banner-principal .card-background div a, main section.banner-principal .card-background img a{
+        font-size: 0.85rem;
+        padding: 9px 13px;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards{
+        padding: 1.5rem 3rem;
+    }
+    section.modelos .descripcion-de-modelos a{
+        width: 40.75%;
+        font-size: 0.85rem;
+        padding: 9px 13px;
+        text-align: center;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card{
+        padding: 3rem 1.75rem;
+    }
+}
+
+@media all and (max-width: 920px){
+    footer .contenedor{
+        width: 95%;
+    }
+    footer .contenedor div h2{
+        font-size: 0.9rem !important;
+    }
+    footer p.creditos{
+        font-size: 0.85rem;
+    }
+    main section.banner-principal .card-background{
+        width: 75%;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card h2{
+        font-size: 1.1rem;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card p{
+        font-size: 0.8rem;
+    }
+    .servicios h2{
+        margin: 1.5rem 0 2.5rem;
+    }
+    .contacto .container h2{
+        margin-top: 1.35rem;
+        font-size: 1.2rem;
+    }
+    .contacto .container p{
+        font-size: 0.8rem;
+        margin: 0.5rem 0;
+    }
+    .contacto .container form .primero label, .contacto .container form .segundo label{
+        font-size: 0.8rem;
+    }
+    footer .contenedor div ul li a, footer .contenedor div ul li p{
+        font-size: 0.8rem;
+    }
+    section.modelos .descripcion-de-modelos a{
+        width: 47.75%;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards{
+        padding: 1rem 2.5rem;
+    }
+}
+
+@media all and (max-width: 800px){
+    section.modelos .descripcion-de-modelos p{
+        font-size: 0.8rem;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card img{
+        width: 105px;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards{
+        padding: 1rem 2rem;
+    }
+    .servicios h2{
+        margin: 1rem 0 2rem;
+    }
+    .servicios .contenedor .card:hover .face.face1 .content p{
+        font-size: 0.9rem;
+    }
+    .contacto .container form{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    .contacto .container form button{
+        grid-column: span 2;
+        width: 95.5%;
+        margin: 1rem auto;
+        padding-left: 0;
+    }
+}
+
+@media all and (max-width: 730px){
+    main section.banner-principal .card-background div h2, main section.banner-principal .card-background img h2{
+        font-size: 1.2rem;
+        margin: 0.25rem 0;
+    }
+    main section.banner-principal .card-background div p, main section.banner-principal .card-background img p{
+        font-size: 0.75rem;
+        margin: 0.15rem 0 0.6rem 0;
+    }
+    main section.banner-principal .card-background div, main section.banner-principal .card-background img{
+        padding: 0.85rem;
+    }
+    main .navbar nav ul li a{
+        font-size: 0.8rem;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card{
+        padding: 2.25rem 1.25rem;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card h2{
+        font-size: 1rem;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card p{
+        font-size: 0.7rem;
+    }
+    section.modelos .descripcion-de-modelos h2{
+        font-size: 1.05rem;
+    }
+    section.modelos .descripcion-de-modelos p{
+        font-size: 0.7rem;
+    }
+    section.modelos .descripcion-de-modelos a{
+        width: 55.75%;
+    }
+    section.modelos .descripcion-de-modelos::before{
+        height: 35%;
+    }
+    .servicios h2{
+        margin: 0.5rem 0 1.75rem;
+    }
+}
+
+@media all and (max-width: 700px){
+    // DESACTIVAMOS EL INTERRUPTOR PARA LA ANIMACION DEL BANNER
+    main .navbar nav .icon-button{
+        display: none;
+    }
+    // GG
+    main section.banner-principal .card-background{
+        flex-direction: column;
+        width: 50%;
+    }
+    main section.banner-principal .card-background div, main section.banner-principal .card-background img{
+        padding: 0.85rem 0;
+    }
+    section.modelos .descripcion-de-modelos a{
+        width: 100%;
+    }
+    .servicios .contenedor{
+        display: flex;
+        flex-direction: column;
+    }
+    .contacto{
+        padding: 3rem 0;
+    }
+    .servicios{
+        padding: 2rem 0;
+    }
+    .spacer{
+        padding: 2rem 0;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card{
+        padding: 2rem 1rem;
+    }
+    #queries{
+        width: 90%;
+    }
+    footer .contenedor{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+    section.modelos .descripcion-de-modelos{
+        padding: 0 3rem;
+    }
+    section.modelos .descripcion-de-modelos::before{
+        display: none;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card img{
+        width: 80px;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards{
+        padding: 0.5rem 0.9rem;
+    }
+}
+
+@media all and (max-width: 650px){
+    section.modelos .descripcion-de-modelos h2{
+        font-size: 1rem;
+    }
+    section.modelos .descripcion-de-modelos p{
+        font-size: 0.65rem;
+    }
+    section.modelos .descripcion-de-modelos a{
+        font-size: 0.8rem;
+    }
+    footer p.creditos{
+        font-size: 0.6rem;
+    }
+}
+
+@media all and (max-width: 600px){
+    div.scrollmagic-pin-spacer{
+        display: none !important;
+    }
+    section.modelos .nuestros-modelos{
+        width: 100%;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards div.card img{
+        right: 0;
+        left: 50%;
+    }
+    section.modelos .nuestros-modelos div.contenedores-cards{
+        padding: 0.5rem 3rem;
+    }
+    .contacto .container form .primero{
+        padding: 0 1rem 0 0;
+    }
+    .contacto .container form .segundo{
+        padding: 0 0 0 1rem;
+    }
+    .contacto .container form button{
+        width: 100%;
+    }
+    .contacto .container form button{
+        padding-right: 0;
+    }
+    main .navbar nav ul li{
+        margin: 0 0.5rem;
+    }
+}
+
+@media all and (max-width: 450px){
+    main section.banner-principal .card-background{
+        width: 80%;
+    }
+    footer .contenedor{
+        grid-template-columns: 1fr;
+    }
+    main .navbar nav ul li{
+        margin: 0 0.25rem;
+    }
+}

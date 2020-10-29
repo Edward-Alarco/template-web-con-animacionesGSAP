@@ -301,6 +301,10 @@ section.modelos{
         grid-template-columns: repeat(3, 1fr);
         .card{
             position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             &:hover .face{
                 &.face1{
                     transform: translateY(0);
@@ -476,3 +480,4 @@ section.modelos{
 }
 
 @import 'footer';
+@import 'media-query';
